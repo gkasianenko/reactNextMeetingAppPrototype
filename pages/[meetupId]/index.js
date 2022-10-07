@@ -58,7 +58,7 @@ export async function getStaticPaths() {
       },
     ],
     //если поставить false, все пути, которых нет в списке getStaticPaths будут выдавать 404 страницу. Next сбилдит только эти пути из списка. Если поставить true, когда юзер попадет на страницу, которой нет в списке getStaticPaths, Next покажет ему fallback страничку прогрузки. А потом уже выведет саму страницу
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
